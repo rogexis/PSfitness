@@ -3,6 +3,7 @@ import AddExercise from "../components/AddExercise";
 import ExerciseList from "../components/ExerciseList";
 import Welcome from "../components/Welcome";
 import addImg from "../images/add.png";
+import {Helmet} from 'react-helmet';
 
 
 class Exercises extends React.Component{
@@ -42,6 +43,12 @@ class Exercises extends React.Component{
     render(){
         return(
             <div>
+                
+        <Helmet>
+
+            <title>PurpleShape | Lista De Ejercivios</title>
+
+        </Helmet>
                 <Welcome
                     userName = 'Alexis'
                 />

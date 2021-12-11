@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../components/Card"
+import Card from "../components/Card";
 
 function ExerciseList(props) {
     return (
@@ -10,6 +10,7 @@ function ExerciseList(props) {
                     return (
 
                         <Card
+                            key={exercise.id}
                             title={exercise.title}
                             description={exercise.description}
                             img={exercise.img}

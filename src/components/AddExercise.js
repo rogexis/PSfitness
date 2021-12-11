@@ -1,18 +1,15 @@
 import React from "react";
 import './styles/AddExercise.css';
 import './styles/Card.css';
+import { Link } from 'react-router-dom'
 
 
-function AddExercise(props) {
-    return (
-            <footer>
-                <div className="Add-Exercise">
-                    <img src={props.img} alt="" />
+const AddExercise = (props) => (
+    <Link to="/exercise/new">
+        <img className="Fitness-Add" src={props.img} alt="" />
 
-                </div>
-            </footer>
-    )
+    </Link>
+)
 
-}
 
 export default AddExercise
