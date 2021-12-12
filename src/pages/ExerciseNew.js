@@ -9,8 +9,8 @@ class ExerciseNew extends React.Component{
             title: '',
             description: '',
             img: '',
-            leftColor: '#f0f0f0f',
-            rightColor: '#0f0f0f'
+            leftColor: '',
+            rightColor: ''
         }
     }
     handleChange = (e) => {
